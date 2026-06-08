@@ -3,22 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Chesspector</title>
 </head>
 <body>
 
-    <h1>Chesspector</h1>
+<div id="welcome">
+    <h1 id="header">Chesspector</h1>
 
-    <input type="text" id="username" placeholder="Search for an username">
-    <br>
-    <button onclick="fetchData()">Search</button> 
-    <button onclick="historyData()">Check History</button>
-    <br>
-    <button onclick="clearFunction()">Clear</button> 
+    <input type="text" id="usernameSearch" placeholder="Search for an username">
 
-    <div id="baseInfo"></div>
-    <div id="performanceInfo"></div>
+    <div id="buttons">
+        <button onclick="fetchData()">Search</button> 
+        <button onclick="clearData()">Clear</button> 
+    </div>
+</div>
 
+<div id="playerData">
+    <div id="baseInfo">
+        <h2 id="username"></h3>
+        <img id="profileImage" src="">
+        <p id="realName"></p>
+        <p id="league"></p>
+        <p id="country"></p>
+        <p id="lastOnline"></p>
+        <p id="joinDate"></p>
+        <button id="profileURL" onclick=""></button>
+    </div> 
+    <div id="performanceInfo">
+            <h3 id="performance"></h3>
+                <div id="rapidCard">
+                    <p id="rapid"></p>
+                    <p id="rapidRecord"></p>
+                </div>
+                <div id="blitzCard">
+                    <p id="blitz"></p>
+                    <p id="blitzRecord"></p>
+                </div>
+
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
     <script src="script.js"></script>
+
 </body>
 </html>
