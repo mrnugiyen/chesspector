@@ -26,7 +26,6 @@ async function fetchData() {
         document.getElementById('profileImage').src = data.avatar;
         document.getElementById('realName').textContent = `Name: ${data.name}`;
         document.getElementById('league').textContent = `League: ${data.league}`;
-        document.getElementById('country').textContent = `Country: ${data.country}`;
         document.getElementById('lastOnline').textContent = `Last Online: ${new Date(data.last_online * 1000).toLocaleString()}`;
         document.getElementById('joinDate').textContent = `Joined: ${new Date(data.joined * 1000).toLocaleString()}`;   
         document.getElementById('profileURL').textContent = 'Chess.com profile';
@@ -60,6 +59,7 @@ async function fetchData() {
 
 }
 
+// funktio joka tyhjentää kaikki data kentät
 function clearData() {
     document.getElementById('username').textContent = '';
     document.getElementById('realName').textContent = '';
