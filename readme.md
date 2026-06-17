@@ -3,7 +3,6 @@
 
 ## Verkkolinkit:
 Pääset julkaistuun sovellukseen käsiksi osoitteessa [chesspector.com](https://chesspector.netlify.app/)
-Linkki projektin videoesittelyyn [google.com](https://google.com)
 
 ## Työn jakautuminen 
 Minä tein kaiken itse
